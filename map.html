@@ -78,10 +78,10 @@
             if (xhr.status === 200) {
                 var output = JSON.parse(xhr.responseText);
                 console.log(output);
-                    var weather = "<br>Weather: " + output.weather[0].description;
-                    console.log(weather);
-                    var content = infoWindow.getContent();
-                    infoWindow.setContent(content + weather);
+                var weather = "<br>Weather: " + output.weather[0].description;
+                console.log(weather);
+                var content = infoWindow.getContent();
+                infoWindow.setContent(content + weather);
             }
         }
         xhr.send();
